@@ -12,6 +12,7 @@
       bike community in Dedham.
     = link_to "Learn More", "#mission", class: 'topper__cta'
   .topper__featured-event
-    - featured_events = data.space.events.select{ |id, event| event.featured }
-    - featured_events.each do |id, event|
-      = partial 'partials/components/featured_event', locals: { event: event }
+    - scheduled_events = data.space.events.select{ |id, event| event[:date] != nil }.sort_by{ |id, event| event[:date] }
+    - future_events = scheduled_events.select{ |id, event| event[:date] >= Date.today }
+    - featured_event = future_events.first.last
+    = partial 'partials/components/featured_event', locals: { event: featured_event }
