@@ -2,7 +2,7 @@
   - if event.age
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.age}
-  - elsif index == 0 && active
+  - elsif index == 0 && event.date && active
     .event__for
       = partial 'partials/components/stamp', locals: { text: 'Next Event' }
   .event__content
