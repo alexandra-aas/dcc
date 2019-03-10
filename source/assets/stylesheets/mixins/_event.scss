@@ -1,3 +1,16 @@
+@mixin event-grid($count) {
+  margin-right: $event-gutter;
+  width: calc((100% - #{$event-gutter * ($count - 1)}) / #{$count});
+
+  &:nth-child(#{$count}n) {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(n+#{$count + 1}) {
+    margin-top: $stamp-size--half + $spacing--lg;
+  }
+}
+
 @mixin event-border {
   display: block;
   position: relative;

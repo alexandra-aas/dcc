@@ -1,8 +1,3 @@
-
-$events-per-row: 4;
-$event-margin--sm: $spacing--md;
-$event-margin--lg: $spacing--lg;
-
 .event {
   @include event-border;
   display: flex;
@@ -24,32 +19,16 @@ $event-margin--lg: $spacing--lg;
     }
   }
 
-  @include mq($bp--tablet) {
-    @include margin(null 1%);
-  }
-
   @include mq($bp--tablet, $bp--desktop) {
-    width: 48%;
-
-    &:nth-of-type(n+3) {
-      margin-top: $stamp-size--half + $event-margin--lg;
-    }
+    @include event-grid(2);
   }
 
   @include mq($bp--desktop, $bp--desktop-xl) {
-    width: 31.3%;
-
-    &:nth-of-type(n+4) {
-      margin-top: $stamp-size--half + $event-margin--lg;
-    }
+    @include event-grid(3);
   }
 
   @include mq($bp--desktop-xl) {
-    width: 23%;
-
-    &:nth-of-type(n+5) {
-      margin-top: $stamp-size--half + $event-margin--lg;
-    }
+    @include event-grid(4);
   }
 }
 
