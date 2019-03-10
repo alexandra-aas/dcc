@@ -37,6 +37,7 @@
 
 .about__figure {
   @include figure-reset;
+  flex: 2;
 
   @include mq(max, $bp--tablet-xl) {
     width: 100%;
@@ -48,7 +49,6 @@
 
   @include mq($bp--tablet-xl) {
     box-shadow: $box-shadow--cover-lines;
-    flex: 2;
     margin-right: $spacing--md;
   }
 
@@ -62,11 +62,9 @@
 }
 
 .about__section-content {
-  @include mq($bp--tablet-xl) {
-    flex: 3;
-  }
+  flex: 4;
 
-  @include mq($bp--desktop-xl) {
+  @include mq($bp--desktop) {
     flex: 2;
   }
 }
