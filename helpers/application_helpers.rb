@@ -26,6 +26,6 @@ module ApplicationHelpers
   end
 
   def donate_link
-    'https://www.paypal.me/dedhamcycleclub'
+    'https://www.paypal.me/dedhamcycleclub/15'
   end
 end
