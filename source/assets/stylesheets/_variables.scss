@@ -1,6 +1,6 @@
 // Fonts
-$--secondary: 'Work Sans', sans-serif;;
-$font--primary: 'Adieu';
+$font--secondary: "Work Sans", sans-serif;
+$font--primary: "Adieu";
 
 // Font Sizes
 $font-size--xxs: 12px;
@@ -34,17 +34,18 @@ $font-size--body-md-min: $font-size--sm;
 // Line Heights
 $lh--sm: 1.25;
 $lh--base: 1.5;
-$lh--lg: 1.6;
+$lh--md: 1.6;
+$lh--lg: 2;
 
 // Colors
-$color--white: #FFFFFF;
+$color--white: #ffffff;
 $color--black: #000000;
-$color--gray: #6E6868;
-$color--tan: #F0EEE7;
-$color--dark-tan: #E8E5DC;
+$color--gray: #6e6868;
+$color--tan: #f0eee7;
+$color--dark-tan: #e8e5dc;
 $color--hunter: #183428;
-$color--spruce: #3D5A4E;
-$color--coral: #FFA369;
+$color--spruce: #3d5a4e;
+$color--coral: #ffa369;
 
 // Spacing
 $spacing--xxs: 5px;
@@ -62,7 +63,8 @@ $border--thin: $border-width--thin solid rgba($color--black, 0.2);
 
 // Cover Lines
 $cover-lines-size: 10px;
-$box-shadow--cover-lines: 0 (-$spacing--xs) $color--tan, 0 $spacing--sm $color--tan;
+$box-shadow--cover-lines: 0 (-$spacing--xs) $color--tan,
+  0 $spacing--sm $color--tan;
 $outline--cover-lines: $cover-lines-size solid $color--tan;
 
 // Border Radius

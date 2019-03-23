@@ -16,7 +16,7 @@ h4 {
 
 p {
   @include margin(0 null $spacing--base);
-  line-height: $lh--lg;
+  line-height: $lh--md;
 
   &:last-of-type {
     margin-bottom: 0;

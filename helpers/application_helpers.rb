@@ -24,4 +24,8 @@ module ApplicationHelpers
       'Location TBD'
     end
   end
+
+  def donate_link
+    'https://www.paypal.me/dedhamcycleclub'
+  end
 end

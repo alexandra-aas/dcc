@@ -2,6 +2,7 @@
   @include container;
   @include padding($spacing--md null);
   font-weight: 500;
+  line-height: $lh--lg;
   text-align: center;
 
   @include mq($bp--desktop) {
